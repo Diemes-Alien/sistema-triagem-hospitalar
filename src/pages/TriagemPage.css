@@ -45,20 +45,20 @@
 
 /* Botões específicos */
 .logout-btn {
-  background-color: #dc3545; /* Vermelho */
+  background-color: #dc3545; 
 }
 
 .limpar-btn {
-  background-color: #123b5f; /* Cinza escuro */
+  background-color: #123b5f; 
 }
 
 .limpar-historico-btn {
-  background-color: #ffc107; /* Amarelo */
+  background-color: #ffc107; 
   color: #333;
 }
 
 .finalizar-btn {
-  background-color: #28a745; /* Verde */
+  background-color: #28a745; 
   margin-top: 0.5rem;
 }
 
@@ -105,18 +105,13 @@
 
 /* Botão Chamar Próximo Paciente */
 .chamar-proximo-btn {
-  background-color: #32bcf3; /* Azul claro */
+  background-color: #32bcf3; 
 }
 
-/* ... (todo o seu CSS existente aqui) ... */
-
-/* Estilo para o nosso novo botão de Exportar para Excel */
+/* Estilo para o nosso botão de Exportar para Excel */
 .exportar-excel-btn {
-  background-color: #28a745; /* Um verde bonito, para combinar com a ideia de "salvar"! */
-  /* Você pode mudar essa cor para a que mais gostar! Por exemplo: #007bff (azul), #ffc107 (amarelo) */
+  background-color: #28a745;
 }
-
-/* ... (Seus estilos existentes) ... */
 
 /* Para o container principal, precisamos que ele seja o "palco" para o botão "Sair" */
 .triagem-container {
@@ -132,43 +127,40 @@
 
 /* Novo estilo para o container do botão Sair */
 .logout-button-container {
-  position: absolute; /* Isso permite que a div se posicione livremente */
-  top: 20px;          /* 20px da borda superior do 'triagem-container' */
-  right: 20px;        /* 20px da borda direita do 'triagem-container' */
-  z-index: 10;        /* Garante que o botão fique acima de outros elementos se houver sobreposição */
+  position: absolute; 
+  top: 20px;         
+  right: 20px; 
+  z-index: 10; 
 }
 
-/* ... (O restante dos seus estilos, incluindo o .logout-btn existente) ... */
-
-/* Se você já tem um estilo para .logout-btn, ele vai continuar funcionando */
 .logout-btn {
-  background-color: #dc3545; /* Vermelho */
+  background-color: #dc3545; 
 }
 
 /* --- Estilos para a Caixa de Busca --- */
 .busca-container {
-  margin-top: 1.5rem; /* Espaço acima da caixa */
-  margin-bottom: 2rem; /* Espaço abaixo da caixa */
-  text-align: center; /* Centraliza o campo de busca dentro da div */
+  margin-top: 1.5rem; 
+  margin-bottom: 2rem; 
+  text-align: center; 
 }
 
 .campo-busca {
-  width: 100%; /* Ocupa 100% da largura do seu container */
-  max-width: 600px; /* Mas não deixa ele ficar gigante em telas muito largas */
-  padding: 0.8rem 1rem; /* Espaço interno */
-  border: 1px solid #ccc; /* Borda cinza */
-  border-radius: 8px; /* Cantos arredondados */
-  font-size: 1rem; /* Tamanho da fonte */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Uma sombra suave */
-  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animação ao focar */
+  width: 100%; 
+  max-width: 600px; 
+  padding: 0.8rem 1rem; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  font-size: 1rem; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .campo-busca::placeholder {
-  color: #888; /* Cor do texto de dica */
+  color: #888; 
 }
 
 .campo-busca:focus {
-  outline: none; /* Remove o contorno padrão do navegador */
-  border-color: #007BFF; /* Mudar a cor da borda ao focar */
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Adiciona uma sombra azul suave ao focar */
+  outline: none; 
+  border-color: #007BFF; 
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); 
 }
