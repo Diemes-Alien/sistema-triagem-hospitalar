@@ -1,6 +1,6 @@
 # 🏥 Sistema de Controle de Atendimento (Hospital) - Triagem de Pacientes
 
-Este projeto faz parte do curso **Capacita Brasil Fullstack (Módulo 1)** e foi desenvolvido em **React.js**. Meu foco principal neste trabalho foi a implementação das telas de **Login** e **Triagem de Pacientes**.
+Este projeto faz parte do curso **Capacita Brasil Fullstack (Módulo básico)** e foi desenvolvido em **React.js**. Meu foco principal neste trabalho foi a implementação das telas de **Login** e **Triagem de Pacientes**.
 
 ---
 
@@ -66,7 +66,7 @@ Para popular a lista de pacientes e testar as funcionalidades, você pode injeta
       { nome: 'Paciente Moderado', nomeReal: 'Larissa Lima', motivo: 'Crise asmática leve', cor: 'Amarelo', status: 'Aguardando' },
       { nome: 'Paciente Moderado', nomeReal: 'Rafael Souza', motivo: 'Febre persistente há 3 dias', cor: 'Amarelo', status: 'Aguardando' },
       { nome: 'Paciente Leve', nomeReal: 'Fernanda Oliveira', motivo: 'Resfriado comum', cor: 'Verde', status: 'Aguardando' },
-      { nome: 'Paciente Leve', nomeReal: 'Guilherme Santos', motivo: 'Dor de garganta leve', cor: 'Verde', status: 'Aguardando' },
+      { nome: 'Paciente Leve', nomeReal: 'Lucas Santos', motivo: 'Dor de garganta leve', cor: 'Verde', status: 'Aguardando' },
       { nome: 'Paciente Atendido', nomeReal: 'Sofia Rodrigues', motivo: 'Consulta de rotina', cor: 'Verde', status: 'Atendido' },
       { nome: 'Paciente Em Atendimento', nomeReal: 'Diego Alves', motivo: 'Pequena laceração no braço', cor: 'Amarelo', status: 'Em atendimento' },
     ];
@@ -83,10 +83,9 @@ Para popular a lista de pacientes e testar as funcionalidades, você pode injeta
 
 Este projeto foi desenvolvido como parte de um trabalho em equipe para o curso Capacita Brasil. Minha contribuição principal foi nas seguintes partes:
 
-* **[Seu Nome/Membro da Equipe]:** Implementação da Tela de Login e Tela de Triagem de Pacientes.
+* **[Diemes Alien]:** Implementação da Tela de Login e Tela de Triagem de Pacientes.
 
 ---
 
 ## 📄 Licença
-
-[Se você tiver uma licença específica, adicione aqui. Caso contrário, pode remover esta seção ou adicionar um "Sem Licença Específica por enquanto".]
+Sem Licença Específica por enquanto.
