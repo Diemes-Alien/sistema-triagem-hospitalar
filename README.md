@@ -1,65 +1,69 @@
-# 🏥 Sistema de Controle de Atendimento (Hospital) - Triagem de Pacientes
+🏥 Sistema de Controle de Atendimento (Hospital) - Triagem de Pacientes
 
-Este projeto faz parte do curso **Capacita Brasil Fullstack (Módulo básico)** e foi desenvolvido em **React.js**. Meu foco principal neste trabalho foi a implementação das telas de **Login** e **Triagem de Pacientes**.
+Este projeto faz parte do curso Capacita Brasil Fullstack (Módulo básico) e foi desenvolvido em React.js. Meu foco principal neste trabalho foi a implementação das telas de Login e Triagem de Pacientes.
+✨ Funcionalidades Implementadas na Triagem
 
----
+    Gestão de Fila de Atendimento: Organização de pacientes com base em prioridade (cores).
+    Controle de Status: Atualização do status do paciente para "Aguardando", "Em Atendimento" e "Atendido".
+    Priorização Visual: Identificação clara do "Tipo de Paciente" (Urgente, Moderado, Leve) e do "Nome do Paciente" na interface.
+    Chamada de Próximo Paciente: Funcionalidade para chamar o paciente com a maior prioridade da fila.
+    Limpeza de Dados: Opções para limpar o histórico de pacientes atendidos ou remover todos os pacientes.
+    Exportação para Excel (CSV): Geração de um arquivo CSV com os dados de todos os pacientes para fácil visualização em planilhas.
+    Busca e Filtragem Dinâmica: Campo de busca para encontrar pacientes rapidamente por nome, tipo ou motivo.
+    Experiência do Usuário (UX) Aprimorada:
+        Botão "Sair" posicionado convenientemente no canto superior direito.
+        Melhoria no feedback visual ao chamar pacientes (substituindo alert() por um destaque mais suave).
 
-## ✨ Funcionalidades Implementadas na Triagem
-
-* **Gestão de Fila de Atendimento:** Organização de pacientes com base em prioridade (cores).
-* **Controle de Status:** Atualização do status do paciente para "Aguardando", "Em Atendimento" e "Atendido".
-* **Priorização Visual:** Identificação clara do "Tipo de Paciente" (Urgente, Moderado, Leve) e do "Nome do Paciente" na interface.
-* **Chamada de Próximo Paciente:** Funcionalidade para chamar o paciente com a maior prioridade da fila.
-* **Limpeza de Dados:** Opções para limpar o histórico de pacientes atendidos ou remover todos os pacientes.
-* **Exportação para Excel (CSV):** Geração de um arquivo CSV com os dados de todos os pacientes para fácil visualização em planilhas.
-* **Busca e Filtragem Dinâmica:** Campo de busca para encontrar pacientes rapidamente por nome, tipo ou motivo.
-* **Experiência do Usuário (UX) Aprimorada:**
-    * Botão "Sair" posicionado convenientemente no canto superior direito.
-    * Melhoria no feedback visual ao chamar pacientes (substituindo `alert()` por um destaque mais suave).
-
----
-
-## 🚀 Como Rodar o Projeto Localmente
+🚀 Como Rodar o Projeto Localmente
 
 Siga estas instruções para configurar e rodar o projeto em sua máquina:
 
-1.  **Clone o Repositório:**
-    ```bash
-    git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
-    ```
-    (Lembre-se de substituir `SEU_USUARIO` e `SEU_REPOSITORIO` pelos seus dados reais do GitHub)
+    Clone o Repositório:
+    Bash
 
-2.  **Navegue até a Pasta do Projeto:**
-    ```bash
-    cd SEU_REPOSITORIO_NOME
-    ```
+git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
 
-3.  **Instale as Dependências:**
-    ```bash
-    npm install
-    # ou
-    yarn install
-    ```
+(Lembre-se de substituir SEU_USUARIO e SEU_REPOSITORIO pelos seus dados reais do GitHub)
 
-4.  **Inicie o Servidor de Desenvolvimento:**
-    ```bash
+Navegue até a Pasta do Projeto:
+Bash
+
+cd SEU_REPOSITORIO_NOME
+
+Instale as Dependências:
+Bash
+
+npm install
+# ou
+yarn install
+
+Inicie o Servidor de Desenvolvimento:
+Bash
+
     npm start
     # ou
     yarn start
-    ```
-    O aplicativo será aberto automaticamente no seu navegador em `http://localhost:3000`.
 
----
+    O aplicativo será aberto automaticamente no seu navegador em http://localhost:3000.
 
-## 🧪 Como Testar com Dados de Pacientes
+Credenciais de Login
 
-Para popular a lista de pacientes e testar as funcionalidades, você pode injetar dados de teste diretamente no `localStorage` do seu navegador.
+Para acessar a tela de triagem, use as seguintes credenciais de teste na tela de login:
 
-1.  Com o aplicativo rodando em `http://localhost:3000`, abra as **Ferramentas do Desenvolvedor** do seu navegador (geralmente pressionando `F12`).
-2.  Vá para a aba **`Console`**.
-3.  Cole o seguinte código no console e pressione `Enter`:
+    Usuário: admin
+    Senha: 1234
 
-    ```javascript
+🧪 Como Testar com Dados de Pacientes
+
+Para popular a lista de pacientes e testar as funcionalidades, você pode injetar dados de teste diretamente no localStorage do seu navegador.
+
+    Com o aplicativo rodando em http://localhost:3000, abra as Ferramentas do Desenvolvedor do seu navegador (geralmente pressionando F12).
+
+    Vá para a aba Console.
+
+    Cole o seguinte código no console e pressione Enter:
+    JavaScript
+
     const pacientesTeste = [
       { nome: 'Paciente Urgente', nomeReal: 'Isabela Costa', motivo: 'Dor torácica intensa', cor: 'Vermelho', status: 'Aguardando' },
       { nome: 'Paciente Urgente', nomeReal: 'Thiago Martins', motivo: 'Trauma grave na cabeça', cor: 'Vermelho', status: 'Aguardando' },
@@ -72,20 +76,17 @@ Para popular a lista de pacientes e testar as funcionalidades, você pode injeta
     ];
     localStorage.setItem('pacientes', JSON.stringify(pacientesTeste));
     console.log('Dados de teste de pacientes carregados no localStorage!');
-    ```
 
-4.  **Recarregue a página** (`Ctrl + F5` ou `Cmd + Shift + R`).
-5.  A lista de pacientes na tela de triagem será preenchida com esses dados.
+    Recarregue a página (Ctrl + F5 ou Cmd + Shift + R).
 
----
+    A lista de pacientes na tela de triagem será preenchida com esses dados.
 
-## 👩‍💻 Equipe do Projeto
+👩‍💻 Equipe do Projeto
 
 Este projeto foi desenvolvido como parte de um trabalho em equipe para o curso Capacita Brasil. Minha contribuição principal foi nas seguintes partes:
 
-* **[Diemes Alien]:** Implementação da Tela de Login e Tela de Triagem de Pacientes.
+    [Diemes Alien]: Implementação da Tela de Login e Tela de Triagem de Pacientes.
 
----
+📄 Licença
 
-## 📄 Licença
 Sem Licença Específica por enquanto.
